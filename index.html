@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geo-Location</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+</head>
+<body>
+    <header>
+        <img class="header--image" src="https://image.flaticon.com/icons/png/512/2969/2969964.png">
+        <h1>Geo Location</h1>
+    </header>
+    <main>
+        <p><b>How to use:</b> <br>Press "Show location" to show location. If you want to show a new location, you must press "Reload".  </p>
+        <section class="main__container--buttons">
+            <button type="button" onclick="findPosition()">Show Location</button>
+            <input type="button" value="Reload" onclick="location.reload()"/>
+        </section>
+            <div id="mapid"></div>
+    </main>
+    <footer>
+        <div class="contenedor__footer">
+            <p>Acerca del creador</p>
+            <ul>
+                <a href="https://github.com/gnigrinis"><img src="https://image.flaticon.com/icons/png/512/733/733609.png"></a>
+                <a href="https://www.linkedin.com/in/giancarlonigrinis/"><img src="https://image.flaticon.com/icons/png/512/174/174857.png"></a>           
+            </ul>
+        </div>
+    </footer>
+    <script src="./javascript/findPosition.js"></script>
+</body>
+</html>
